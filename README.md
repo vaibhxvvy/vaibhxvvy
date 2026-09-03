@@ -327,6 +327,34 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">gravity — contributions fall into <code>vaibhxvvy</code> text (flycran/github-gravity) via <code>gravity.yml</code></p>
 
+<!-- Local custom heatmaps — streak, glow, terrain, full-year -->
+<div align="center">
+  <img src="assets/heatmap-streak.svg" width="100%" alt="streak heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">streak heatmap — 7-day streak highlighted in violet pulse <code>heatmap-streak.svg</code></p>
+
+<div align="center">
+  <img src="assets/heatmap-glow.svg" width="100%" alt="glow heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">glow heatmap — neon pulse, cells breathe <code>heatmap-glow.svg</code> filtered</p>
+
+<div align="center">
+  <img src="assets/heatmap-terrain.svg" width="100%" alt="terrain heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">terrain heatmap — topographic contour wave <code>heatmap-terrain.svg</code></p>
+
+<div align="center">
+  <img src="assets/heatmap-full.svg" width="100%" alt="full heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">full-year heatmap — dense 53×7 = 371 cells, 0.2s fade-in <code>heatmap-full.svg</code></p>
+
+<!-- extra city variants -->
+<div align="center">
+  <a href="https://gitcity.natrajx.in/vaibhxvvy?theme=noir"><img src="https://gitcity.natrajx.in/api/svg?u=vaibhxvvy&theme=noir" width="48%" alt="gitcity noir"/></a>
+  <a href="https://gitcity.natrajx.in/vaibhxvvy?theme=ocean"><img src="https://gitcity.natrajx.in/api/svg?u=vaibhxvvy&theme=ocean" width="48%" alt="gitcity ocean"/></a>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">gitcity noir + ocean — alt themes · <a href="https://github.com/rishabhbhartiya/GitCity">GitCity</a> 6 themes: matrix, noir, aurora, ocean, gold, ice</p>
+
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
 <!-- metrics isocalendar — generated via metrics.yml -->
