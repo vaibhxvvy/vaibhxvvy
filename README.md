@@ -366,6 +366,20 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">2D mono heatmap — grayscale ↔ violet cycle (4.5s loop) <code>heatmap-2d-mono.svg</code></p>
 
+<div align="center">
+  <img src="assets/heatmap-3d-ripple.svg" width="100%" alt="3D ripple heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">3D ripple heatmap — 18×7 isometric bars, height = intensity, radial ripple <code>heatmap-3d-ripple.svg</code> · SMIL height + top-face + glow</p>
+
+<!-- bomberman — starts right after ripple -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dist/bomberman-contribution-graph-dark.svg"/>
+    <img src="dist/bomberman-contribution-graph.svg" width="100%" alt="bomberman · blast cells"/>
+  </picture>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">bomberman · blast cells — after ripple, bombs blast contribution cells (<code>pacman.yml</code> → <code>bomberman-contribution-graph.svg</code>)</p>
+
 <!-- extra city variants -->
 <div align="center">
   <a href="https://gitcity.natrajx.in/vaibhxvvy?theme=noir"><img src="https://gitcity.natrajx.in/api/svg?u=vaibhxvvy&theme=noir" width="48%" alt="gitcity noir"/></a>
