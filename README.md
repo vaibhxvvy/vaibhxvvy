@@ -193,18 +193,101 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 
 <!-- 3D heatmap — generated daily via 3d-heatmap.yml -->
 <div align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution heatmap"/>
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution heatmap (night rainbow)"/>
 </div>
-<p style="color:#8B8DA3;font-size:11px;margin-top:4px">isometric heatmap — your contributions in 3D — generated daily via <code>3d-heatmap.yml</code> · <a href="./profile-3d-contrib/profile-green-animate.svg">2D animated</a> also available</p>
+<p style="color:#8B8DA3;font-size:11px;margin-top:4px">isometric heatmap — your contributions in 3D — <b>night-rainbow</b> (main) · daily via <code>3d-heatmap.yml</code></p>
 
-<!-- Pacman heatmap — generated daily via pacman.yml -->
+<details>
+<summary style="color:#7A5CFA;cursor:pointer"><b>▶ All 3D variants (10 heatmaps) — click to expand</b></summary>
+<br/>
+<table>
+<tr>
+<td align="center" width="50%"><img src="./profile-3d-contrib/profile-green-animate.svg" width="100%" alt="green animate"/><br/><code>green-animate</code></td>
+<td align="center" width="50%"><img src="./profile-3d-contrib/profile-season-animate.svg" width="100%" alt="season animate"/><br/><code>season-animate</code></td>
+</tr>
+<tr>
+<td align="center"><img src="./profile-3d-contrib/profile-south-season-animate.svg" width="100%" alt="south season"/><br/><code>south-season-animate</code></td>
+<td align="center"><img src="./profile-3d-contrib/profile-night-green.svg" width="100%" alt="night green"/><br/><code>night-green</code></td>
+</tr>
+<tr>
+<td align="center"><img src="./profile-3d-contrib/profile-green.svg" width="100%" alt="green"/><br/><code>green</code></td>
+<td align="center"><img src="./profile-3d-contrib/profile-season.svg" width="100%" alt="season"/><br/><code>season</code></td>
+</tr>
+<tr>
+<td align="center"><img src="./profile-3d-contrib/profile-south-season.svg" width="100%" alt="south season"/><br/><code>south-season</code></td>
+<td align="center"><img src="./profile-3d-contrib/profile-gitblock.svg" width="100%" alt="gitblock"/><br/><code>gitblock</code></td>
+</tr>
+</table>
+<p style="color:#8B8DA3;font-size:11px">All generated in <code>profile-3d-contrib/</code> — every push + daily 18:00 UTC. Also <code>profile-night-view.svg</code> in folder.</p>
+</details>
+
+<br/>
+
+<!-- Arcade heatmaps — all 6 games, generated via pacman.yml -->
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dist/pacman-contribution-graph-dark.svg"/>
-    <img src="dist/pacman-contribution-graph.svg" width="100%" alt="pacman heatmap"/>
-  </picture>
+<h4 style="color:#E8E8EE;margin:8px 0">🎮 Arcade heatmaps — every game on your contributions</h4>
+<p style="color:#8B8DA3;font-size:12px;margin:0">All 6 games from <code>pacman-contribution-graph</code> — same heatmap data, different arcade physics. Daily via <code>pacman.yml</code>.</p>
 </div>
-<p style="color:#8B8DA3;font-size:11px;margin-top:4px">pacman heatmap — the yellow chomper eats your contributions — generated daily via <code>pacman.yml</code></p>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/pacman-contribution-graph-dark.svg"/>
+  <img src="dist/pacman-contribution-graph.svg" width="100%" alt="pacman"/>
+</picture>
+<br/><code>pacman</code> · chomps quartiles
+</td>
+<td align="center" width="50%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/breakout-contribution-graph-dark.svg"/>
+  <img src="dist/breakout-contribution-graph.svg" width="100%" alt="breakout"/>
+</picture>
+<br/><code>breakout</code> · bricks = days
+</td>
+</tr>
+<tr>
+<td align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/galaga-contribution-graph-dark.svg"/>
+  <img src="dist/galaga-contribution-graph.svg" width="100%" alt="galaga"/>
+</picture>
+<br/><code>galaga</code> · shooter
+</td>
+<td align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/puzzle-bobble-contribution-graph-dark.svg"/>
+  <img src="dist/puzzle-bobble-contribution-graph-dark.svg" width="100%" alt="puzzle-bobble"/>
+</picture>
+<br/><code>puzzle-bobble</code> · bubble pop
+</td>
+</tr>
+<tr>
+<td align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/bomberman-contribution-graph-dark.svg"/>
+  <img src="dist/bomberman-contribution-graph-dark.svg" width="100%" alt="bomberman"/>
+</picture>
+<br/><code>bomberman</code> · blast cells
+</td>
+<td align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/minesweeper-contribution-graph-dark.svg"/>
+  <img src="dist/minesweeper-contribution-graph-dark.svg" width="100%" alt="minesweeper"/>
+</picture>
+<br/><code>minesweeper</code> · solver
+</td>
+</tr>
+</table>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">Arcade suite: <code>pacman,breakout,galaga,puzzle-bobble,bomberman,minesweeper</code> — light + dark SVGs in <code>dist/</code></p>
+
+<img src="assets/divider.svg" width="100%" alt="divider"/>
+
+<!-- metrics isocalendar — generated via metrics.yml -->
+<div align="center">
+  <img src="metrics/metrics.svg" width="100%" alt="metrics isocalendar heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">metrics isocalendar — half-year calendar heatmap + habits + languages — daily via <code>metrics.yml</code> (requires <code>METRICS_TOKEN</code> or falls back to <code>GITHUB_TOKEN</code>)</p>
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
