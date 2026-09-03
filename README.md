@@ -293,6 +293,19 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </table>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">Arcade suite: <code>pacman,breakout,galaga,puzzle-bobble,bomberman,minesweeper</code> — light + dark SVGs in <code>dist/</code></p>
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg"/>
+    <img src="assets/snake.svg" width="100%" alt="snake heatmap"/>
+  </picture>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">snake — classic eats-the-graph — via <code>snake.yml</code> (Platane/snk, custom palette #7A5CFA→#00D9FF)</p>
+
+<div align="center">
+  <img src="assets/wave-heatmap.svg" width="100%" alt="wave heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">wave heatmap — custom 37×7 pulse grid, wave animates column-by-column — local <code>wave-heatmap.svg</code></p>
+
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
 <!-- metrics isocalendar — generated via metrics.yml -->
