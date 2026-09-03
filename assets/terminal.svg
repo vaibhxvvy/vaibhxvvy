@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="165" viewBox="0 0 800 165" role="img">
+<title>Pipeline terminal</title>
+<defs>
+  <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#7A5CFA"/>
+    <stop offset="100%" stop-color="#00D9FF"/>
+  </linearGradient>
+  <style>
+    .win { fill: #11131A; stroke: #1C1E2A; }
+    .head { fill: #0A0A0F; }
+    .dot1 { fill: #FF5F56; } .dot2 { fill: #FFBD2E; } .dot3 { fill: #27C93F; }
+    .mono { font-family: 'JetBrains Mono','Fira Code',monospace; font-size: 12.5px; fill: #E8E8EE; }
+    .muted { fill: #8B8DA3; font-size: 11px; }
+    .acc { fill: #7A5CFA; } .cyn { fill: #00D9FF; } .suc { fill: #3ECF8E; }
+  </style>
+</defs>
+<rect x="12" y="12" width="776" height="141" rx="14" class="win"/>
+<rect x="12" y="12" width="776" height="32" rx="14" class="head"/>
+<rect x="12" y="28" width="776" height="16" class="head"/>
+<circle cx="34" cy="28" r="6" class="dot1"/><circle cx="54" cy="28" r="6" class="dot2"/><circle cx="74" cy="28" r="6" class="dot3"/>
+<text x="102" y="32.5" font-family="JetBrains Mono,monospace" font-size="11" fill="#8B8DA3">pipeline — zsh — 80×24</text>
+
+<g font-family="JetBrains Mono,monospace" font-size="12.5">
+  <!-- line 1 -->
+  <g opacity="0">
+    <text x="26" y="66" fill="#8B8DA3">~/pipeline</text>
+    <text x="108" y="66" fill="#7A5CFA">$</text>
+    <text x="122" y="66" fill="#E8E8EE">ingest</text>
+    <text x="176" y="66" fill="#00D9FF">--source api --replay</text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.3s" fill="freeze"/>
+  </g>
+  <g opacity="0">
+    <text x="26" y="84" fill="#3ECF8E">✓ validated 12.4k rows</text>
+    <text x="188" y="84" fill="#8B8DA3">(schema v3 · 0.02% drift)</text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.9s" fill="freeze"/>
+  </g>
+  <g opacity="0">
+    <text x="26" y="102" fill="#8B8DA3">~/pipeline</text>
+    <text x="108" y="102" fill="#7A5CFA">$</text>
+    <text x="122" y="102" fill="#E8E8EE">model train</text>
+    <text x="218" y="102" fill="#00D9FF">--exp 42 --eval prod-slice</text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.6s" fill="freeze"/>
+  </g>
+  <g opacity="0">
+    <text x="26" y="120" fill="#E8E8EE">→ accuracy</text>
+    <text x="118" y="120" fill="#7A5CFA">0.87</text>
+    <text x="156" y="120" fill="#8B8DA3">| latency</text>
+    <text x="224" y="120" fill="#00D9FF">42ms</text>
+    <text x="266" y="120" fill="#8B8DA3">| cost</text>
+    <text x="312" y="120" fill="#3ECF8E">$0.004/1k</text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+  </g>
+  <g opacity="0">
+    <text x="26" y="138" fill="#8B8DA3">~/pipeline</text>
+    <text x="108" y="138" fill="#7A5CFA">$</text>
+    <text x="122" y="138" fill="#E8E8EE">deploy</text>
+    <text x="176" y="138" fill="#00D9FF">--canary 20% --rollback-on drift&gt;0.05</text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.9s" fill="freeze"/>
+    <!-- blinking cursor -->
+    <rect x="514" y="128" width="8" height="14" rx="1" fill="#7A5CFA" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0;0.9" dur="0.9s" begin="3.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</g>
+<!-- subtle gradient border glow -->
+<rect x="12" y="12" width="776" height="141" rx="14" fill="none" stroke="url(#tbg)" stroke-width="0.9" opacity="0.35"/>
+</svg>

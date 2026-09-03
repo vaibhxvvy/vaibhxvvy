@@ -67,6 +67,10 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </p>
 
 <div align="center">
+<img src="assets/counter.svg" width="100%" alt="counts"/>
+</div>
+
+<div align="center">
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 </div>
 
@@ -74,6 +78,10 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 <h3 id="02--stack">02 — stack &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">the pipeline toolkit</span></h3>
 
 <div align="center">
+
+<img src="assets/orbit.svg" width="100%" alt="orbit ecosystem"/>
+
+<br/>
 
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,sklearn,postgres,mongodb,mysql,supabase,git,github,vercel,figma,ts,js&theme=dark" alt="skillicons"/></a>
 
@@ -98,6 +106,8 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 
 <p style="color:#8B8DA3;font-size:12px;margin-top:8px">Python-first. TS for shipping. SQL for truth. The stack serves the pipeline — not the other way around.</p>
 
+<img src="assets/skill-bars.svg" width="100%" alt="skill bars animated"/>
+
 </div>
 
 <div align="center">
@@ -108,6 +118,8 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 <h3 id="03--system">03 — system &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">how I build</span></h3>
 
 <div align="center">
+<img src="assets/terminal.svg" width="100%" alt="terminal pipeline demo"/>
+<br/>
 <img src="assets/pipeline.svg" width="100%" alt="pipeline ingest validate model deploy monitor"/>
 </div>
 
