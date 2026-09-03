@@ -53,7 +53,7 @@ jobs:
               x=sx+col*(cell+gap)
               y=sy+row*(cell+gap)
               dist=math.hypot(col-cx,row-cy)
-              delay=dist*0.04+random.random()*0.02
+              delay=dist*0.08+random.random()*0.02
               glow=' filter="url(#glow)"' if lvl>=3 else ''
               date=c.get("date","")
               cnt=c.get("count",0)
