@@ -20,10 +20,9 @@
 
 </div>
 
-<!-- sticky scroll nav + TRUE scroll-triggered animation (view-timeline) -->
+<!-- Brave/Chromium true scroll-trigger + GitHub-safe fallback (staggered) -->
 <style>
   html { scroll-behavior: smooth; }
-  /* sticky nav */
   .scroll-nav {
     position: sticky;
     top: 0;
@@ -36,22 +35,31 @@
     text-align: center;
   }
   .scroll-nav a { text-decoration: none; }
-  /* true scroll-trigger: each .page animates when it ENTERS viewport, not on load */
   .pages { scroll-snap-type: y proximity; }
+  /* fallback (GitHub strips view-timeline): staggered fade so you still see sections appear as you scroll down, not all at once */
   .page {
     scroll-snap-align: start;
     scroll-margin-top: 64px;
     padding-top: 6px;
-    /* view-timeline: animate only when you reach there */
-    view-timeline-name: --page;
-    view-timeline-axis: block;
-    animation: reveal linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation: reveal 0.65s ease both;
   }
+  .page:nth-of-type(1) { animation-delay: 0.05s; }
+  .page:nth-of-type(2) { animation-delay: 0.28s; }
+  .page:nth-of-type(3) { animation-delay: 0.51s; }
+  .page:nth-of-type(4) { animation-delay: 0.74s; }
+  .page:nth-of-type(5) { animation-delay: 0.97s; }
   @keyframes reveal {
     from { opacity: 0; transform: translateY(14px) scale(0.99); }
     to { opacity: 1; transform: none; }
+  }
+  /* if Brave/Chrome keeps view-timeline (not stripped), override with TRUE scroll-trigger: animate only when you reach there */
+  @supports (animation-timeline: view()) {
+    .page {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 28%;
+      animation-delay: 0s;
+    }
   }
   /* sticky heatmap */
   .sticky-heatmap {
