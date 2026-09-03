@@ -371,14 +371,20 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">3D ripple heatmap — 18×7 isometric bars, height = intensity, radial ripple <code>heatmap-3d-ripple.svg</code> · SMIL height + top-face + glow</p>
 
-<!-- bomberman — starts right after ripple -->
+<!-- combined 3D ripple → bomberman blast IN heatmap -->
+<div align="center">
+  <img src="assets/heatmap-3d-bomberman.svg" width="100%" alt="3D ripple then bomberman blast inside heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center"><b>3D ripple → bomberman blast cells IN heatmap</b> — ripple (0–2.4s) then 3 bombermen B1/B2/B3 drop bombs and blast cross-neighbor cells <code>heatmap-3d-bomberman.svg</code> · 126 bars + blast radial</p>
+
+<!-- bomberman — standalone arcade -->
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="dist/bomberman-contribution-graph-dark.svg"/>
     <img src="dist/bomberman-contribution-graph.svg" width="100%" alt="bomberman · blast cells"/>
   </picture>
 </div>
-<p style="color:#8B8DA3;font-size:11px;text-align:center">bomberman · blast cells — after ripple, bombs blast contribution cells (<code>pacman.yml</code> → <code>bomberman-contribution-graph.svg</code>)</p>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">bomberman arcade — standalone blast cells (<code>pacman.yml</code> → <code>bomberman-contribution-graph.svg</code>)</p>
 
 <!-- extra city variants -->
 <div align="center">
