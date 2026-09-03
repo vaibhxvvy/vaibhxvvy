@@ -200,8 +200,8 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 <!-- Pacman heatmap — generated daily via pacman.yml -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="pacman-contribution-graph-dark.svg"/>
-    <img src="pacman-contribution-graph.svg" width="100%" alt="pacman heatmap"/>
+    <source media="(prefers-color-scheme: dark)" srcset="dist/pacman-contribution-graph-dark.svg"/>
+    <img src="dist/pacman-contribution-graph.svg" width="100%" alt="pacman heatmap"/>
   </picture>
 </div>
 <p style="color:#8B8DA3;font-size:11px;margin-top:4px">pacman heatmap — the yellow chomper eats your contributions — generated daily via <code>pacman.yml</code></p>
