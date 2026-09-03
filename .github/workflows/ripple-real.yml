@@ -35,46 +35,31 @@ jobs:
           gap=3
           sx=0
           sy=0
-          svg=[]
-          svg.append(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">
-          <title>Fullsize 2D Ripple — Colourful Real Data — Original Size</title>
-          <rect width="{W}" height="{H}" rx="3" fill="#0d1117"/>
-          ''')
-          if len(contribs) > cols*rows:
-              contribs = contribs[-cols*rows:]
-          elif len(contribs) < cols*rows:
-              pad = cols*rows - len(contribs)
-              contribs = [{"level":0,"count":0,"date":""}]*pad + contribs
-          import math, random
-          for idx, c in enumerate(contribs):
-              col = idx // 7
-              row = idx % 7
-              lvl = int(c.get("level",0))
-              lvl = max(0, min(4, lvl))
-              color = palette[lvl]
-              x = sx + col*(cell+gap)
-              y = sy + row*(cell+gap)
-              dist = math.hypot(col-cx, row-cy)
-              delay = dist*0.04 + random.random()*0.02
-              glow = ' filter="url(#glow)"' if lvl>=3 else ''
-              date = c.get("date","")
-              cnt = c.get("count",0)
-              svg.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="1.8" fill="{color}"{glow} opacity="0"><title>{date}: {cnt}</title><animate attributeName="opacity" values="0;1" dur="0.32s" begin="{delay:.2f}s" fill="freeze"/><animate attributeName="width" values="{cell};{cell+0.8};{cell}" dur="1.5s" begin="{delay+0.9:.2f}s" repeatCount="indefinite"/></rect>')
-          months={}
+          cx, cy = cols//2, rows//2
+          parts=[]
+          parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">')
+          parts.append('<title>Fullsize 2D Ripple — Colourful Real Data — Original Size</title>')
+          parts.append('<defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>')
+          parts.append(f'<rect width="{W}" height="{H}" rx="3" fill="#0d1117"/>')
+          if len(contribs)>cols*rows:
+              contribs=contribs[-cols*rows:]
+          elif len(contribs)<cols*rows:
+              contribs=[{"level":0,"count":0,"date":""}]*(cols*rows-len(contribs))+contribs
           for idx,c in enumerate(contribs):
-              d=c.get("date","")
-              if d:
-                  m=d[5:7]
-                  col= idx//7
-                  if m not in months:
-                      months[m]=col
-          names={"01":"Jan","02":"Feb","03":"Mar","04":"Apr","05":"May","06":"Jun","07":"Jul","08":"Aug","09":"Sep","10":"Oct","11":"Nov","12":"Dec"}
-          for m,col in sorted(months.items()):
-              mx = sx + col*(cell+gap)
-              svg.append(f'<text x="{mx}" y="{sy + 7*(cell+gap)+12}" class="lab">{names.get(m,m)}</text>')
-          svg.append(f'<text x="18" y="{sy+10}" class="lab">Sun</text><text x="18" y="{sy+32}" class="lab">Wed</text><text x="18" y="{sy+54}" class="lab">Sat</text>')
-          svg.append('</svg>')
-          pathlib.Path("assets/full-2d-ripple.svg").write_text("\n".join(svg), encoding="utf-8")
+              col=idx//7
+              row=idx%7
+              lvl=max(0,min(4,int(c.get("level",0))))
+              color=palette[lvl]
+              x=sx+col*(cell+gap)
+              y=sy+row*(cell+gap)
+              dist=math.hypot(col-cx,row-cy)
+              delay=dist*0.04+random.random()*0.02
+              glow=' filter="url(#glow)"' if lvl>=3 else ''
+              date=c.get("date","")
+              cnt=c.get("count",0)
+              parts.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{color}"{glow} opacity="0"><title>{date}: {cnt} level {lvl}</title><animate attributeName="opacity" values="0;1" dur="0.32s" begin="{delay:.2f}s" fill="freeze"/></rect>')
+          parts.append('</svg>')
+          pathlib.Path("assets/full-2d-ripple.svg").write_text("\n".join(parts), encoding="utf-8")
           print(f"written {len(contribs)} cells")
           PY
           python3 gen.py
