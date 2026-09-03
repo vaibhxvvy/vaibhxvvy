@@ -386,6 +386,12 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">bomberman arcade — standalone blast cells (<code>pacman.yml</code> → <code>bomberman-contribution-graph.svg</code>)</p>
 
+<!-- gitcity 3D ripple animation (custom) -->
+<div align="center">
+  <img src="assets/gitcity-ripple.svg" width="100%" alt="gitcity 3D ripple"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center"><b>gitcity 3D ripple</b> — 32 neon towers grow in center→edges ripple + top glow + street dashflow <code>gitcity-ripple.svg</code> · custom #00D9FF→#7A5CFA</p>
+
 <!-- extra city variants -->
 <div align="center">
   <a href="https://gitcity.natrajx.in/vaibhxvvy?theme=noir"><img src="https://gitcity.natrajx.in/api/svg?u=vaibhxvvy&theme=noir" width="48%" alt="gitcity noir"/></a>
