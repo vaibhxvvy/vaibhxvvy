@@ -20,7 +20,7 @@
 
 </div>
 
-<!-- sticky scroll nav + animate-on-scroll styles (GH-safe: :target only, no JS) -->
+<!-- sticky scroll nav + TRUE scroll-triggered animation (view-timeline) -->
 <style>
   html { scroll-behavior: smooth; }
   /* sticky nav */
@@ -36,25 +36,21 @@
     text-align: center;
   }
   .scroll-nav a { text-decoration: none; }
-  /* scroll container */
+  /* true scroll-trigger: each .page animates when it ENTERS viewport, not on load */
   .pages { scroll-snap-type: y proximity; }
   .page {
     scroll-snap-align: start;
     scroll-margin-top: 64px;
-    opacity: 0.88;
-    transform: translateY(8px);
-    transition: opacity 0.45s ease, transform 0.45s ease;
     padding-top: 6px;
+    /* view-timeline: animate only when you reach there */
+    view-timeline-name: --page;
+    view-timeline-axis: block;
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
   }
-  .page:target {
-    opacity: 1;
-    transform: none;
-  }
-  .page:target h3 {
-    animation: slideIn 0.5s ease;
-  }
-  @keyframes slideIn {
-    from { opacity: 0; transform: translateY(10px); }
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(14px) scale(0.99); }
     to { opacity: 1; transform: none; }
   }
   /* sticky heatmap */
