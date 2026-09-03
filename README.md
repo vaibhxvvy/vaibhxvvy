@@ -1,3 +1,243 @@
 <div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0A0A0F&height=130&section=header&text=&animation=fadeIn" width="100%" alt="header wave"/>
+
+<a href="https://github.com/vaibhxvvy">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2200&pause=900&color=7A5CFA&center=true&vCenter=true&width=720&height=46&lines=vaibhav+surthi+—+systems+over+models;data+%E2%86%92+pipeline+%E2%86%92+decisions;real+data.+prod+constraints.+shipped." alt="typing"/>
+</a>
+
+<p>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=3500&pause=1200&color=8B8DA3&center=true&vCenter=true&width=620&height=20&lines=ML+%2F+Data+Science+%E2%80%A2+Automation+%E2%80%A2+Decision+Engines" alt="sub"/>
+</p>
+
+<p>
+<a href="https://github.com/vaibhxvvy"><img src="https://img.shields.io/badge/github-11131A?style=flat-square&logo=github&logoColor=E8E8EE&labelColor=0A0A0F" alt="gh"/></a>
+<a href="https://linkedin.com/in/vaibhavsurthi"><img src="https://img.shields.io/badge/linkedin-11131A?style=flat-square&logo=linkedin&logoColor=7A5CFA&labelColor=0A0A0F" alt="li"/></a>
+<a href="mailto:vaibhavsurthi08@gmail.com"><img src="https://img.shields.io/badge/email-11131A?style=flat-square&logo=gmail&logoColor=8B8DA3&labelColor=0A0A0F" alt="email"/></a>
+<a href="https://instagram.com/vaibhxvvy"><img src="https://img.shields.io/badge/instagram-11131A?style=flat-square&logo=instagram&logoColor=E4405F&labelColor=0A0A0F" alt="ig"/></a>
+<img src="https://komarev.com/ghpvc/?username=vaibhxvvy&style=flat-square&color=11131A&labelColor=0A0A0F&label=views" alt="views"/>
+</p>
+
+</div>
+
+<!-- sticky scroll nav + animate-on-scroll styles (GH-safe: :target only, no JS) -->
+<style>
+  html { scroll-behavior: smooth; }
+  /* sticky nav */
+  .scroll-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(10,10,15,0.92);
+    backdrop-filter: blur(6px);
+    padding: 10px 0 8px 0;
+    margin: 0 -8px;
+    border-bottom: 1px solid #1C1E2A;
+    text-align: center;
+  }
+  .scroll-nav a { text-decoration: none; }
+  /* scroll container */
+  .pages { scroll-snap-type: y proximity; }
+  .page {
+    scroll-snap-align: start;
+    scroll-margin-top: 64px;
+    opacity: 0.88;
+    transform: translateY(8px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    padding-top: 6px;
+  }
+  .page:target {
+    opacity: 1;
+    transform: none;
+  }
+  .page:target h3 {
+    animation: slideIn 0.5s ease;
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+  /* sticky heatmap */
+  .sticky-heatmap {
+    position: sticky;
+    top: 52px;
+    z-index: 5;
+    background: #0A0A0F;
+    padding: 8px 0;
+    border: 1px solid #1C1E2A;
+    border-radius: 10px;
+  }
+  /* fallback if style stripped: pages stay visible */
+</style>
+
+<div class="scroll-nav">
+<a href="#01--about"><img src="https://img.shields.io/badge/01%E2%80%94about-0A0A0F?style=flat-square&labelColor=11131A&color=1C1E2A" alt="about"/></a>
+<a href="#02--stack"><img src="https://img.shields.io/badge/02%E2%80%94stack-0A0A0F?style=flat-square&labelColor=11131A&color=1C1E2A" alt="stack"/></a>
+<a href="#03--system"><img src="https://img.shields.io/badge/03%E2%80%94system-0A0A0F?style=flat-square&labelColor=11131A&color=1C1E2A" alt="system"/></a>
+<a href="#04--work"><img src="https://img.shields.io/badge/04%E2%80%94work-0A0A0F?style=flat-square&labelColor=11131A&color=1C1E2A" alt="work"/></a>
+<a href="#05--stats"><img src="https://img.shields.io/badge/05%E2%80%94stats-0A0A0F?style=flat-square&labelColor=11131A&color=1C1E2A" alt="stats"/></a>
+</div>
+
+<div class="pages">
+
+<div class="page" id="01--about">
+
+<h3>01 — about &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">systems, not just models</span></h3>
+
+> 🧠 ML/Data Science focused on systems, not just models  
+> ⚙️ Design pipelines that turn data into decisions  
+> 📊 Real-world data & production constraints  
+> 🤖 Automation and decision engines
+
+I build the parts that make ML useful in production — **ingest, validation, observability, and the decision layer**. Models sit in the middle. *Pipelines are the product.* I optimize for latency, cost, and drift, not just accuracy.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**What I do**
+<br/>
+<span style="color:#8B8DA3;font-size:13px">Ship end-to-end flows <code>Ingest → Validate → Model → Deploy → Monitor</code>. Close the loop so feedback becomes the next dataset.</span>
+
+</td>
+<td width="50%" valign="top">
+
+**What I'm exploring**
+<br/>
+<span style="color:#8B8DA3;font-size:13px">Agentic research workflows, RAG over private knowledge, and decision engines that run without babysitting.</span>
+
+</td>
+</tr>
+</table>
+
+<p>
+<code>real data > toy datasets</code> <code>constraints are features</code> <code>ship → measure → iterate</code> <code>automate the toil</code> <code>observable by default</code>
+</p>
+
+</div>
+
+<div class="page" id="02--stack">
+
+<h3>02 — stack &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">the pipeline toolkit</span></h3>
+
+<div align="center">
+
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,sklearn,postgres,mongodb,mysql,supabase,git,github,vercel,figma,ts,js&theme=dark" alt="skillicons"/></a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Python-11131A?style=flat-square&logo=python&logoColor=7A5CFA&labelColor=0A0A0F" alt="py"/>
+<img src="https://img.shields.io/badge/TypeScript-11131A?style=flat-square&logo=typescript&logoColor=00D9FF&labelColor=0A0A0F" alt="ts"/>
+<img src="https://img.shields.io/badge/SQL-11131A?style=flat-square&logo=postgresql&logoColor=E8E8EE&labelColor=0A0A0F" alt="sql"/>
+<br/>
+<img src="https://img.shields.io/badge/PyTorch-11131A?style=flat-square&logo=pytorch&logoColor=EE4C2C&labelColor=0A0A0F" alt="pt"/>
+<img src="https://img.shields.io/badge/TensorFlow-11131A?style=flat-square&logo=tensorflow&logoColor=FF6F00&labelColor=0A0A0F" alt="tf"/>
+<img src="https://img.shields.io/badge/scikit--learn-11131A?style=flat-square&logo=scikit-learn&logoColor=F7931E&labelColor=0A0A0F" alt="sk"/>
+<img src="https://img.shields.io/badge/MLflow-11131A?style=flat-square&logo=mlflow&logoColor=00D9FF&labelColor=0A0A0F" alt="ml"/>
+<img src="https://img.shields.io/badge/NumPy-11131A?style=flat-square&logo=numpy&logoColor=4DABCF&labelColor=0A0A0F" alt="np"/>
+<img src="https://img.shields.io/badge/Pandas-11131A?style=flat-square&logo=pandas&logoColor=150458&labelColor=0A0A0F" alt="pd"/>
+<br/>
+<img src="https://img.shields.io/badge/Postgres-11131A?style=flat-square&logo=postgresql&logoColor=336791&labelColor=0A0A0F" alt="pg"/>
+<img src="https://img.shields.io/badge/MongoDB-11131A?style=flat-square&logo=mongodb&logoColor=4ea94b&labelColor=0A0A0F" alt="mongo"/>
+<img src="https://img.shields.io/badge/Supabase-11131A?style=flat-square&logo=supabase&logoColor=3ECF8E&labelColor=0A0A0F" alt="supa"/>
+<img src="https://img.shields.io/badge/Vercel-11131A?style=flat-square&logo=vercel&logoColor=E8E8EE&labelColor=0A0A0F" alt="vercel"/>
+
+<p style="color:#8B8DA3;font-size:12px;margin-top:8px">Python-first. TS for shipping. SQL for truth. The stack serves the pipeline — not the other way around.</p>
+
+</div>
+
+</div>
+
+<div class="page" id="03--system">
+
+<h3>03 — system &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">how I build</span></h3>
+
+<table>
+<tr>
+<td width="20%" valign="top"><code>01 ingest</code><br/><span style="color:#E8E8EE;font-size:13px"><b>Capture reality</b></span><br/><span style="color:#8B8DA3;font-size:12.5px">APIs / streams / scrapes. Idempotent, backfillable, schema-aware since day one.</span></td>
+<td width="20%" valign="top"><code>02 validate</code><br/><span style="color:#E8E8EE;font-size:13px"><b>Trust is a check</b></span><br/><span style="color:#8B8DA3;font-size:12.5px">Contract tests & anomaly gates. Bad data never poisons the model.</span></td>
+<td width="20%" valign="top"><code>03 model</code><br/><span style="color:#E8E8EE;font-size:13px"><b>Models are the middle</b></span><br/><span style="color:#8B8DA3;font-size:12.5px">Baseline → improve → retire. Eval on prod slices, version everything.</span></td>
+<td width="20%" valign="top"><code>04 deploy</code><br/><span style="color:#E8E8EE;font-size:13px"><b>Ship small</b></span><br/><span style="color:#8B8DA3;font-size:12.5px">Feature flags, canaries, shadow traffic. The best model is the one serving.</span></td>
+<td width="20%" valign="top"><code>05 monitor ↺</code><br/><span style="color:#E8E8EE;font-size:13px"><b>Close the loop</b></span><br/><span style="color:#8B8DA3;font-size:12.5px">Drift / latency / cost on one dashboard. Feedback → next ingest.</span></td>
+</tr>
+</table>
+
+> Built for **real-world constraints** — not notebooks. Latency budgets, dirty data, and stakeholder deadlines are inputs, not excuses.
+
+</div>
+
+<div class="page" id="04--work">
+
+<h3>04 — work &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">selected builds</span></h3>
+
+<div align="center">
+
+<a href="https://github.com/vaibhxvvy/documentation-pro"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vaibhxvvy&repo=documentation-pro&theme=transparent&bg_color=0A0A0F&title_color=E8E8EE&text_color=8B8DA3&icon_color=7A5CFA&border_color=1C1E2A&border_radius=10&hide_border=false" alt="documentation-pro"/></a>
+<a href="https://github.com/vaibhxvvy/fcuk-paywalls"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vaibhxvvy&repo=fcuk-paywalls&theme=transparent&bg_color=0A0A0F&title_color=E8E8EE&text_color=8B8DA3&icon_color=00D9FF&border_color=1C1E2A&border_radius=10&hide_border=false" alt="fcuk-paywalls"/></a>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**documentation-pro** <span style="color:#8B8DA3">· Shell · ★3</span>
+<br/>
+<span style="color:#8B8DA3;font-size:13px">Opinionated docs-as-code system — generate, lint, and ship handbooks like you ship software.</span>
+<br/>
+
+`docs-as-code` `automation` `DX`
+
+</td>
+<td width="50%" valign="top">
+
+**fcuk-paywalls** <span style="color:#8B8DA3">· TypeScript</span>
+<br/>
+<span style="color:#8B8DA3;font-size:13px">FCUK PAYWALLS — open index of no-signup, in-browser, open-source tools. No accounts. No walls.</span>
+<br/>
+
+`open-source` `no-signup` `tooling`
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<span style="color:#8B8DA3;font-size:13px">More →</span> <a href="https://github.com/vaibhxvvy/portfolio"><code>portfolio</code></a> <a href="https://github.com/vaibhxvvy/agentic-research-assistant"><code>agentic-research-assistant</code></a> <a href="https://github.com/vaibhxvvy/rag-knowledge-assistant"><code>rag-knowledge-assistant</code></a> · <a href="https://github.com/vaibhxvvy?tab=repositories">all repos →</a>
+
+</div>
+
+</div>
+
+<div class="page" id="05--stats">
+
+<h3>05 — stats &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">activity</span></h3>
+
+<div align="center">
+
+<a href="https://github.com/vaibhxvvy"><img height="150" src="https://github-readme-stats.vercel.app/api?username=vaibhxvvy&theme=transparent&bg_color=0A0A0F&title_color=7A5CFA&text_color=E8E8EE&icon_color=7A5CFA&border_color=1C1E2A&hide_border=false&include_all_commits=true&count_private=true" alt="stats"/></a>
+<a href="https://github.com/vaibhxvvy"><img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaibhxvvy&theme=transparent&bg_color=0A0A0F&title_color=7A5CFA&text_color=E8E8EE&icon_color=7A5CFA&border_color=1C1E2A&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="langs"/></a>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=vaibhxvvy&theme=transparent&background=0A0A0F&border=1C1E2A&stroke=1C1E2A&ring=7A5CFA&fire=7A5CFA&currStreakNum=E8E8EE&currStreakLabel=7A5CFA&sideNums=E8E8EE&sideLabels=8B8DA3&dates=8B8DA3" alt="streak"/>
+
+</div>
+
+<div class="sticky-heatmap" align="center">
   <img src="assets/full-2d-ripple.svg?v=4" width="100%" alt="fullsize 2D ripple heatmap"/>
+  <p style="color:#8B8DA3;font-size:11px;margin:6px 0 0 0">fullsize 2D ripple — 53×7 · real data · centre → edges ripple · colourful</p>
+</div>
+
+</div>
+
+</div> <!-- end .pages -->
+
+<div align="center" style="margin-top:18px">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0A0A0F&height=90&section=footer&text=&animation=fadeIn" width="100%" alt="footer"/>
+
+<p style="color:#8B8DA3;font-size:11px;letter-spacing:.3px">custom dark · 0A0A0F / 7A5CFA → 00D9FF · scroll-animated · sticky heatmap · 722×112 ripple</p>
+
 </div>
