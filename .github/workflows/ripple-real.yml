@@ -29,10 +29,10 @@ jobs:
           data = json.loads(urllib.request.urlopen(url, timeout=15).read().decode())
           contribs = data.get("contributions", [])
           palette = ['#1C1E2A','#23263A','#2A2E45','#7A5CFA','#00D9FF']
-          W,H=800,170
+          W,H=722,112
           cols, rows = 53, 7
-          cell=9
-          gap=2
+          cell=10
+          gap=3
           sx=18
           sy=34
           cx, cy = cols//2, rows//2
