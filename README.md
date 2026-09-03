@@ -191,12 +191,11 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 
 <br/>
 
-<!-- snake — shows after first workflow run -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg"/>
-  <img src="assets/snake.svg" width="100%" alt="snake"/>
-</picture>
-<p style="color:#8B8DA3;font-size:11px;margin-top:4px">snake animates your contribution graph — generated daily via <code>snake.yml</code></p>
+<!-- 3D heatmap — generated daily via 3d-heatmap.yml -->
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;margin-top:4px">isometric heatmap — your contributions in 3D — generated daily via <code>3d-heatmap.yml</code> · <a href="./profile-3d-contrib/profile-green-animate.svg">2D animated</a> also available</p>
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
@@ -224,6 +223,6 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0A0A0F&height=90&section=footer&text=&animation=fadeIn" width="100%" alt="footer"/>
 
-<p style="color:#8B8DA3;font-size:11px;letter-spacing:.3px">custom dark · 0A0A0F / 7A5CFA → 00D9FF · animated pipeline + typing + snake + activity · single-page scrolly</p>
+<p style="color:#8B8DA3;font-size:11px;letter-spacing:.3px">custom dark · 0A0A0F / 7A5CFA → 00D9FF · animated pipeline + typing + 3D heatmap + activity · single-page scrolly</p>
 
 </div>
