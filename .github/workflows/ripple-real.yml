@@ -28,24 +28,17 @@ jobs:
           url = "https://github-contributions-api.jogruber.de/v4/vaibhxvvy?y=last"
           data = json.loads(urllib.request.urlopen(url, timeout=15).read().decode())
           contribs = data.get("contributions", [])
-          palette = ['#1C1E2A','#23263A','#2A2E45','#7A5CFA','#00D9FF']
+          palette = ['#161B22','#7A5CFA','#00D9FF','#3ECF8E','#FFB86C']
           W,H=722,112
           cols, rows = 53, 7
           cell=10
           gap=3
-          sx=18
-          sy=34
-          cx, cy = cols//2, rows//2
+          sx=0
+          sy=0
           svg=[]
           svg.append(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">
-          <title>Fullsize 2D Ripple — Real Data</title>
-          <defs>
-            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-            <style>.lab {{ font-family: JetBrains Mono,monospace; font-size: 8px; fill: #8B8DA3; }}</style>
-          </defs>
-          <rect width="{W}" height="{H}" rx="14" fill="#11131A" stroke="#1C1E2A"/>
-          <text x="18" y="20" font-family="JetBrains Mono,monospace" font-size="10" fill="#8B8DA3">FULLSIZE 2D RIPPLE — REAL DATA · 53 WEEKS · {len(contribs)} DAYS · {data.get('total',{{}}).get('lastYear',0)} CONTRIBS LAST YEAR</text>
-          <text x="18" y="32" font-family="JetBrains Mono,monospace" font-size="8" fill="#8B8DA3">levels 0–4 from GitHub API · center → edges ripple · violet → cyan</text>
+          <title>Fullsize 2D Ripple — Colourful Real Data — Original Size</title>
+          <rect width="{W}" height="{H}" rx="3" fill="#0d1117"/>
           ''')
           if len(contribs) > cols*rows:
               contribs = contribs[-cols*rows:]
@@ -80,9 +73,6 @@ jobs:
               mx = sx + col*(cell+gap)
               svg.append(f'<text x="{mx}" y="{sy + 7*(cell+gap)+12}" class="lab">{names.get(m,m)}</text>')
           svg.append(f'<text x="18" y="{sy+10}" class="lab">Sun</text><text x="18" y="{sy+32}" class="lab">Wed</text><text x="18" y="{sy+54}" class="lab">Sat</text>')
-          svg.append('<line x1="18" y1="155" x2="782" y2="155" stroke="#1C1E2A" stroke-width="0.7" opacity="0.6"/>')
-          svg.append('<text x="18" y="166" class="lab">53 WEEKS · 7 DAYS · REAL QUARTILES · RIPPLE CENTER → EDGES</text>')
-          svg.append(f'<text x="{W-18}" y="166" text-anchor="end" class="lab">{len(contribs)} days · violet → cyan · live API</text>')
           svg.append('</svg>')
           pathlib.Path("assets/full-2d-ripple.svg").write_text("\n".join(svg), encoding="utf-8")
           print(f"written {len(contribs)} cells")

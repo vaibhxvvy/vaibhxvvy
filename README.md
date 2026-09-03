@@ -29,8 +29,6 @@
 <a href="#05--stats"><img src="https://img.shields.io/badge/05%E2%80%94stats-0A0A0F?style=flat-square&labelColor=11131A&color=1C1E2A" alt="stats"/></a>
 </p>
 
-<img src="assets/divider.svg" width="100%" alt="divider"/>
-
 </div>
 
 <!-- ============================================================ -->
@@ -66,20 +64,10 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 <code>real data > toy datasets</code> <code>constraints are features</code> <code>ship → measure → iterate</code> <code>automate the toil</code> <code>observable by default</code>
 </p>
 
-<div align="center">
-<img src="assets/counter.svg" width="100%" alt="counts"/>
-</div>
-
-<div align="center">
-<img src="assets/divider.svg" width="100%" alt="divider"/>
-</div>
-
 <!-- ============================================================ -->
 <h3 id="02--stack">02 — stack &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">the pipeline toolkit</span></h3>
 
 <div align="center">
-
-<img src="assets/orbit.svg" width="100%" alt="orbit ecosystem"/>
 
 <br/>
 
@@ -106,21 +94,13 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 
 <p style="color:#8B8DA3;font-size:12px;margin-top:8px">Python-first. TS for shipping. SQL for truth. The stack serves the pipeline — not the other way around.</p>
 
-<img src="assets/skill-bars.svg" width="100%" alt="skill bars animated"/>
-
-</div>
-
-<div align="center">
-<img src="assets/divider.svg" width="100%" alt="divider"/>
 </div>
 
 <!-- ============================================================ -->
 <h3 id="03--system">03 — system &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">how I build</span></h3>
 
 <div align="center">
-<img src="assets/terminal.svg" width="100%" alt="terminal pipeline demo"/>
 <br/>
-<img src="assets/pipeline.svg" width="100%" alt="pipeline ingest validate model deploy monitor"/>
 </div>
 
 <table>
@@ -134,10 +114,6 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </table>
 
 > Built for **real-world constraints** — not notebooks. Latency budgets, dirty data, and stakeholder deadlines are inputs, not excuses.
-
-<div align="center">
-<img src="assets/divider.svg" width="100%" alt="divider"/>
-</div>
 
 <!-- ============================================================ -->
 <h3 id="04--work">04 — work &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">selected builds</span></h3>
@@ -181,10 +157,6 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 
 </div>
 
-<div align="center">
-<img src="assets/divider.svg" width="100%" alt="divider"/>
-</div>
-
 <!-- ============================================================ -->
 <h3 id="05--stats">05 — stats &nbsp;<span style="color:#8B8DA3;font-weight:400;font-size:13px">activity</span></h3>
 
@@ -203,9 +175,6 @@ I build the parts that make ML useful in production — **ingest, validation, ob
   <img src="assets/full-2d-ripple.svg" width="100%" alt="fullsize 2D ripple heatmap"/>
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">fullsize 2D ripple — 53×7 = 371 cells · center → edges radial ripple + glow pulse <code>full-2d-ripple.svg</code> · local SMIL</p>
-
-<img src="assets/divider.svg" width="100%" alt="divider"/>
-
 
 <!-- ============================================================ -->
 <!-- DONATE — only on last section, as requested -->
