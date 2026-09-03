@@ -356,6 +356,16 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">full-year heatmap — dense 53×7 = 371 cells, 0.2s fade-in <code>heatmap-full.svg</code></p>
 
+<div align="center">
+  <img src="assets/heatmap-2d-ripple.svg" width="100%" alt="2D ripple heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">2D ripple heatmap — radial wave from center (dist-based stagger) <code>heatmap-2d-ripple.svg</code></p>
+
+<div align="center">
+  <img src="assets/heatmap-2d-mono.svg" width="100%" alt="2D mono heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">2D mono heatmap — grayscale ↔ violet cycle (4.5s loop) <code>heatmap-2d-mono.svg</code></p>
+
 <!-- extra city variants -->
 <div align="center">
   <a href="https://gitcity.natrajx.in/vaibhxvvy?theme=noir"><img src="https://gitcity.natrajx.in/api/svg?u=vaibhxvvy&theme=noir" width="48%" alt="gitcity noir"/></a>
