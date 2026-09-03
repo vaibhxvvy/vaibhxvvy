@@ -197,6 +197,15 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;margin-top:4px">isometric heatmap — your contributions in 3D — generated daily via <code>3d-heatmap.yml</code> · <a href="./profile-3d-contrib/profile-green-animate.svg">2D animated</a> also available</p>
 
+<!-- Pacman heatmap — generated daily via pacman.yml -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="pacman-contribution-graph-dark.svg"/>
+    <img src="pacman-contribution-graph.svg" width="100%" alt="pacman heatmap"/>
+  </picture>
+</div>
+<p style="color:#8B8DA3;font-size:11px;margin-top:4px">pacman heatmap — the yellow chomper eats your contributions — generated daily via <code>pacman.yml</code></p>
+
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
 </div>
@@ -223,6 +232,6 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0A0A0F&height=90&section=footer&text=&animation=fadeIn" width="100%" alt="footer"/>
 
-<p style="color:#8B8DA3;font-size:11px;letter-spacing:.3px">custom dark · 0A0A0F / 7A5CFA → 00D9FF · animated pipeline + typing + 3D heatmap + activity · single-page scrolly</p>
+<p style="color:#8B8DA3;font-size:11px;letter-spacing:.3px">custom dark · 0A0A0F / 7A5CFA → 00D9FF · animated pipeline + typing + 3D heatmap + pacman heatmap + activity · single-page scrolly</p>
 
 </div>
