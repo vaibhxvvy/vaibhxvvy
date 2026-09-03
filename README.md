@@ -327,6 +327,14 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">gravity — contributions fall into <code>vaibhxvvy</code> text (flycran/github-gravity) via <code>gravity.yml</code></p>
 
+<div align="center">
+  <img src="assets/ad-pipeline.svg" width="100%" alt="ad — pipelines that ship"/>
+</div>
+<div align="center">
+  <img src="assets/ad-automate.svg" width="100%" alt="ad — automate the toil"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">2× creative ad animations — <code>ad-pipeline.svg</code> + <code>ad-automate.svg</code> — editorial, local, SMIL</p>
+
 <!-- Local custom heatmaps — streak, glow, terrain, full-year -->
 <div align="center">
   <img src="assets/heatmap-streak.svg" width="100%" alt="streak heatmap"/>

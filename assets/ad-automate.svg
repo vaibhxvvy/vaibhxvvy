@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img">
+<title>Ad — Automate The Toil</title>
+<defs>
+  <linearGradient id="ad2" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00D9FF"/><stop offset="100%" stop-color="#7A5CFA"/>
+  </linearGradient>
+  <filter id="scan" x="0" y="0" width="100%" height="100%"><feGaussianBlur stdDeviation="0.6" result="b"/><feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 8 -2" /></filter>
+  <style>.mono { font-family: 'JetBrains Mono',monospace; }</style>
+</defs>
+<rect width="800" height="220" rx="16" fill="#11131A" stroke="#1C1E2A"/>
+<!-- scanline texture -->
+<rect width="800" height="220" rx="16" fill="none" stroke="#1C1E2A" stroke-width="0"/>
+<g opacity="0.04">
+  <line x1="0" y1="22" x2="800" y2="22" stroke="#E8E8EE" stroke-width="0.6"/>
+  <line x1="0" y1="44" x2="800" y2="44" stroke="#E8E8EE" stroke-width="0.6"/>
+  <line x1="0" y1="66" x2="800" y2="66" stroke="#E8E8EE" stroke-width="0.6"/>
+  <line x1="0" y1="88" x2="800" y2="88" stroke="#E8E8EE" stroke-width="0.6"/>
+</g>
+<!-- left terminal -->
+<g transform="translate(28,18)">
+  <rect width="360" height="184" rx="12" fill="#0A0A0F" stroke="#1C1E2A"/>
+  <circle cx="20" cy="18" r="5" fill="#FF5F56"/><circle cx="36" cy="18" r="5" fill="#FFBD2E"/><circle cx="52" cy="18" r="5" fill="#27C93F"/>
+  <text x="74" y="22" class="mono" font-size="10" fill="#8B8DA3">agent — automate --all</text>
+  <!-- rows with check anim -->
+  <g font-family="JetBrains Mono,monospace" font-size="12">
+    <g opacity="0"><text x="16" y="52" fill="#E8E8EE">$ automate</text><text x="92" y="52" fill="#00D9FF">--all</text><text x="134" y="52" fill="#8B8DA3">  # one command</text><animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.3s" fill="freeze"/></g>
+    <g opacity="0"><text x="16" y="76" fill="#3ECF8E">✔</text><text x="32" y="76" fill="#8B8DA3">ingest</text><text x="86" y="76" fill="#00D9FF">12.4k rows</text><text x="172" y="76" fill="#8B8DA3">· api</text><animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.9s" fill="freeze"/></g>
+    <g opacity="0"><text x="16" y="98" fill="#3ECF8E">✔</text><text x="32" y="98" fill="#8B8DA3">validate</text><text x="104" y="98" fill="#3ECF8E">passed</text><text x="154" y="98" fill="#8B8DA3">· drift 0.02</text><animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/></g>
+    <g opacity="0"><text x="16" y="120" fill="#3ECF8E">✔</text><text x="32" y="120" fill="#8B8DA3">decide</text><text x="90" y="120" fill="#7A5CFA">engine</text><text x="142" y="120" fill="#8B8DA3">· auto</text><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.1s" fill="freeze"/></g>
+    <g opacity="0"><text x="16" y="142" fill="#3ECF8E">✔</text><text x="32" y="142" fill="#8B8DA3">notify</text><text x="90" y="142" fill="#E8E8EE">slack</text><text x="136" y="142" fill="#8B8DA3">#ship</text><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.7s" fill="freeze"/></g>
+    <g opacity="0"><text x="16" y="164" fill="#8B8DA3">$ <tspan fill="#7A5CFA">while sleeping</tspan> <tspan fill="#8B8DA3">→ pipeline runs</tspan></text><animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/><rect x="228" y="152" width="8" height="14" fill="#7A5CFA"><animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="3.5s" repeatCount="indefinite"/></rect></g>
+  </g>
+</g>
+<!-- right copy -->
+<text x="420" y="40" class="mono" font-size="10" fill="#8B8DA3" letter-spacing="1.6">AUTOMATION ≠ MAGIC. IT&apos;S ENGINEERING.</text>
+<text x="420" y="74" font-family="JetBrains Mono,monospace" font-size="28" font-weight="800" fill="#E8E8EE">AUTOMATE</text>
+<text x="420" y="104" font-family="JetBrains Mono,monospace" font-size="28" font-weight="800" fill="url(#ad2)">THE TOIL.</text>
+<!-- underline sweep -->
+<g>
+  <rect x="420" y="112" width="0" height="3" fill="url(#ad2)" rx="1.5"><animate attributeName="width" values="0;266" dur="0.9s" begin="1.2s" fill="freeze"/></rect>
+</g>
+<text x="420" y="136" class="mono" font-size="11.5" fill="#8B8DA3">Decision engines that close the loop.</text>
+<text x="420" y="154" class="mono" font-size="11" fill="#8B8DA3">You sleep. Data <tspan fill="#E8E8EE">→</tspan> decisions <tspan fill="#00D9FF">→</tspan> slack.</text>
+<!-- tags -->
+<g font-family="JetBrains Mono,monospace" font-size="10">
+  <rect x="420" y="168" width="76" height="20" rx="999" fill="#1C1E2A" stroke="#23263A"/><text x="458" y="181.5" text-anchor="middle" fill="#8B8DA3">RAG</text>
+  <rect x="502" y="168" width="88" height="20" rx="999" fill="#1C1E2A" stroke="#23263A"/><text x="546" y="181.5" text-anchor="middle" fill="#8B8DA3">agents</text>
+  <rect x="596" y="168" width="108" height="20" rx="999" fill="#1C1E2A" stroke="#23263A"/><text x="650" y="181.5" text-anchor="middle" fill="#8B8DA3">auto-pilot</text>
+  <g opacity="0.7"><rect x="710" y="168" width="46" height="20" rx="999" fill="url(#ad2)"/><text x="733" y="181.5" text-anchor="middle" font-weight="700" fill="#0A0A0F">↗</text><animate attributeName="opacity" values="0.7;1;0.7" dur="1.4s" repeatCount="indefinite"/></g>
+</g>
+<!-- scan sweep -->
+<rect x="0" y="0" width="800" height="2" fill="url(#ad2)" opacity="0.18">
+  <animate attributeName="y" values="0;220;0" dur="4s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.18;0.06;0.18" dur="4s" repeatCount="indefinite"/>
+</rect>
+</svg>
