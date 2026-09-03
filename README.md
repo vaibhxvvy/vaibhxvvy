@@ -306,6 +306,27 @@ I build the parts that make ML useful in production — **ingest, validation, ob
 </div>
 <p style="color:#8B8DA3;font-size:11px;text-align:center">wave heatmap — custom 37×7 pulse grid, wave animates column-by-column — local <code>wave-heatmap.svg</code></p>
 
+<!-- City skyline + gravity + ghchart — extra heatmap animations -->
+<div align="center">
+  <a href="https://gitcity.natrajx.in/vaibhxvvy"><img src="https://gitcity.natrajx.in/api/svg?u=vaibhxvvy&theme=aurora" width="100%" alt="gitcity skyline aurora"/></a>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">gitcity skyline — 3D city via <code>gitcity.natrajx.in</code> <code>theme=aurora</code> · <a href="https://gitcity.natrajx.in/vaibhxvvy">interactive</a></p>
+
+<div align="center">
+  <img src="https://isometric-contributions-spectrewolf8.onrender.com/api?username=vaibhxvvy&theme=neon" width="100%" alt="spectrewolf isometric neon"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">isometric API — cached PNG city <code>spectrewolf8/isometric-contributions-embeds</code> <code>theme=neon</code></p>
+
+<div align="center">
+  <img src="https://ghchart.rshah.org/0A0A0F/vaibhxvvy" width="100%" alt="ghchart heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">ghchart — classic 52-week heatmap <code>ghchart.rshah.org</code> custom color <code>0A0A0F</code></p>
+
+<div align="center">
+  <img src="assets/gravity.svg" width="100%" alt="gravity heatmap"/>
+</div>
+<p style="color:#8B8DA3;font-size:11px;text-align:center">gravity — contributions fall into <code>vaibhxvvy</code> text (flycran/github-gravity) via <code>gravity.yml</code></p>
+
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
 <!-- metrics isocalendar — generated via metrics.yml -->
