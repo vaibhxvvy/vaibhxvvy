@@ -99,6 +99,7 @@ jobs:
           done < data/featured.txt
           jq -s 'add // {}' data/repos.ndjson > data/repos.json
           rm data/repos.ndjson
+          gh api "users/${GITHUB_REPOSITORY_OWNER}" --jq '{public_repos}' > data/profile.json
 
       - name: Render profile cards
         run: python3 scripts/build_cards.py

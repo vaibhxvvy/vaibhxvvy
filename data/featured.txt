@@ -1,5 +1,8 @@
-documentation-pro
 fcuk-paywalls
+brikk
+agent-init
+documentation-pro
 gridmint
 dsgnr-cli
 hydrent
+nova-mcp
