@@ -68,8 +68,8 @@ PROJECTS = [
     dict(key="brikk", name="brikk", band="blue", lang="Rust",
          desc="A fast native command launcher for Windows and Linux, written in Rust.",
          url="https://github.com/" + USER + "/brikk"),
-    dict(key="axon", name="axon", band="mint", lang="Rust",
-         desc="A high-performance memory graph explorer built with Rust.",
+    dict(key="paper", name="paper", band="mint",
+         desc="New project. Details coming soon.",
          url="https://github.com/" + USER),
     dict(key="opentab", name="opentab", band="pink", lang="TypeScript", repo="fcuk-paywalls",
          desc="An open index of no-signup, in-browser, open-source tools. "
@@ -424,6 +424,28 @@ def card_graph(by_day, st, base):
             cells.append(f'<rect class="{cls}" x="{left + col * pitch}" y="{top + row * pitch}" '
                          f'width="{cell}" height="{cell}" rx="3"{sty}/>')
     b.append("".join(cells))
+    # loop 1: a soft shine sweeps across the grid
+    gx0, gx1 = left - 6, left + 53 * pitch
+    gh = 7 * pitch
+    t0 = base + 1.6
+    sweep = (f'<g clip-path="url(#gclip)"><rect y="{top - 4}" width="64" height="{gh + 8}" '
+             f'fill="url(#shine)" opacity="0">'
+             f'<animate attributeName="x" values="{gx0 - 64};{gx1}" dur="3.2s" begin="{t0:.2f};sw.end+2.4s" id="sw" '
+             f'fill="remove"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" '
+             f'dur="3.2s" begin="{t0:.2f};sw.end+2.4s"/></rect></g>')
+    # loop 2: busiest cells twinkle, staggered
+    hot = sorted(((c, d0) for d0, (c, _) in by_day.items() if start <= d0 <= last and c > 0),
+                 key=lambda t: (-t[0], t[1]))[:24]
+    tw_cells = []
+    for k, (_, d0) in enumerate(hot):
+        dd = (d0 - start).days
+        hc, hr = dd // 7, dd % 7
+        tw_cells.append(
+            f'<rect x="{left + hc * pitch - 1}" y="{top + hr * pitch - 1}" width="{cell + 2}" '
+            f'height="{cell + 2}" rx="4" fill="{C["cream"]}" opacity="0">'
+            f'<animate attributeName="opacity" values="0;.85;0" dur="1.8s" '
+            f'begin="{base + 2.4 + (k * 0.37) % 4:.2f}s" repeatCount="indefinite"/></rect>')
+    b.append(dual(sweep + "".join(tw_cells), ""))
     lc = last - start
     col, row = lc.days // 7, lc.days % 7
     px, py = left + col * pitch + cell / 2, top + row * pitch + cell / 2
@@ -442,8 +464,14 @@ def card_graph(by_day, st, base):
     b.append(txt(more_x, ly + 10, "More", 12, "fb", C["muted"], d=base + 0.6))
     css_levels = "".join(f".l{i}{{fill:{LEVELS[i]}}}" for i in range(5))
     body = f"<style>{css_levels}</style>" + "".join(b)
+    defs = (f'<linearGradient id="shine" x1="0" x2="1" y1="0" y2="0">'
+            f'<stop offset="0" stop-color="{C["cream"]}" stop-opacity="0"/>'
+            f'<stop offset=".5" stop-color="{C["cream"]}" stop-opacity=".7"/>'
+            f'<stop offset="1" stop-color="{C["cream"]}" stop-opacity="0"/></linearGradient>'
+            f'<clipPath id="gclip"><rect x="{left - 6}" y="{top - 4}" width="{53 * pitch + 6}" '
+            f'height="{7 * pitch + 8}"/></clipPath>')
     return svg_doc(W, H, body, "Contribution graph",
-                   f"Contribution graph for the last year: {st['total']:,} contributions.")
+                   f"Contribution graph for the last year: {st['total']:,} contributions.", defs)
 
 
 def card_activity(st, base):
