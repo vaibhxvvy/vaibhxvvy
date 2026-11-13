@@ -67,10 +67,10 @@ BADGES = [
 PROJECTS = [
     dict(key="brikk", name="brikk", band="blue", lang="Rust",
          desc="A fast native command launcher for Windows and Linux, written in Rust.",
-         url="https://github.com/" + USER + "/brikk"),
+         url="https://brikkapp.vercel.app/"),
     dict(key="paper", name="paper", band="mint",
          desc="New project. Details coming soon.",
-         url="https://github.com/" + USER),
+         url="https://github.com/" + USER + "/paper"),
     dict(key="opentab", name="opentab", band="pink", lang="TypeScript", repo="fcuk-paywalls",
          desc="An open index of no-signup, in-browser, open-source tools. "
               "No accounts. No emails. No walls.",

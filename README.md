@@ -12,8 +12,8 @@
 
 <img src="cards/title-coding.svg" alt="What I'm coding" width="100%" />
 
-<a href="https://github.com/vaibhxvvy/brikk"><img src="cards/project-brikk.svg" alt="brikk" width="32.5%" /></a>
-<a href="https://github.com/vaibhxvvy"><img src="cards/project-paper.svg" alt="paper" width="32.5%" /></a>
+<a href="https://brikkapp.vercel.app/"><img src="cards/project-brikk.svg" alt="brikk" width="32.5%" /></a>
+<a href="https://github.com/vaibhxvvy/paper"><img src="cards/project-paper.svg" alt="paper" width="32.5%" /></a>
 <a href="https://github.com/vaibhxvvy/fcuk-paywalls"><img src="cards/project-opentab.svg" alt="opentab" width="32.5%" /></a>
 
 <img src="cards/title-small.svg" alt="Small stuff I ship" width="100%" />
