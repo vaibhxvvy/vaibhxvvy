@@ -68,9 +68,9 @@ PROJECTS = [
     dict(key="brikk", name="brikk", band="blue", lang="Rust",
          desc="A fast native command launcher for Windows and Linux, written in Rust.",
          url="https://brikkapp.vercel.app/"),
-    dict(key="paper", name="paper", band="mint",
-         desc="New project. Details coming soon.",
-         url="https://github.com/" + USER + "/paper"),
+    dict(key="paper", name="paper", band="mint", lang="Rust",
+         desc="Write freely. Remember everything. A writing-first notes workspace on Tauri and Rust.",
+         url="https://github.com/" + USER),
     dict(key="opentab", name="opentab", band="pink", lang="TypeScript", repo="opentab",
          desc="An open index of no-signup, in-browser, open-source tools. "
               "No accounts. No emails. No walls.",
