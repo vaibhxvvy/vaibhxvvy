@@ -611,7 +611,7 @@ def card_project(p, meta, base):
 
 def card_small(name, meta, shadow, base):
     W, H = 290, 140
-    desc = meta.get("description") or ""
+    desc = meta.get("description") or f"github.com/{USER}/{name}"
     lang = meta.get("language")
     stars = int(meta.get("stargazers_count") or 0)
     upd = rel_time(meta.get("pushed_at"))
