@@ -71,10 +71,10 @@ PROJECTS = [
     dict(key="paper", name="paper", band="mint",
          desc="New project. Details coming soon.",
          url="https://github.com/" + USER + "/paper"),
-    dict(key="opentab", name="opentab", band="pink", lang="TypeScript", repo="fcuk-paywalls",
+    dict(key="opentab", name="opentab", band="pink", lang="TypeScript", repo="opentab",
          desc="An open index of no-signup, in-browser, open-source tools. "
               "No accounts. No emails. No walls.",
-         url="https://github.com/" + USER + "/fcuk-paywalls"),
+         url="https://github.com/" + USER + "/opentab"),
 ]
 TITLE_BIG = "What I'm coding"
 TITLE_SMALL = "Small stuff I ship"

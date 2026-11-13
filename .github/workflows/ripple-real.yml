@@ -93,9 +93,13 @@ jobs:
           : > data/repos.ndjson
           while read -r r; do
             [ -n "$r" ] || continue
-            gh api "repos/${GITHUB_REPOSITORY_OWNER}/$r" \
-              --jq '{(.name): {description, language, stargazers_count, forks_count, pushed_at}}' \
-              >> data/repos.ndjson || echo "skipping $r"
+            if out=$(gh api "repos/${GITHUB_REPOSITORY_OWNER}/$r" 2>/dev/null); then
+              echo "$out" | jq --arg n "$r" \
+                '{($n): {description, language, stargazers_count, forks_count, pushed_at}}' \
+                >> data/repos.ndjson
+            else
+              echo "skipping $r (not readable)"
+            fi
           done < data/featured.txt
           jq -s 'add // {}' data/repos.ndjson > data/repos.json
           rm data/repos.ndjson

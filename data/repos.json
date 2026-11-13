@@ -1,54 +1,51 @@
 {
-  "opentab": {
-    "description": "FCUK PAYWALLS — an open index of no-signup, in-browser, open-source tools. No accounts. No emails. No walls.",
-    "forks_count": 0,
-    "language": "TypeScript",
-    "pushed_at": "2026-11-10T07:38:13Z",
-    "stargazers_count": 1
-  },
-  "message": "Not Found",
-  "documentation_url": "https://docs.github.com/rest/repos/repos#get-a-repository",
-  "status": "404",
-  "agent-init": {
-    "description": "One-click agentic template for CLI agents (opencode/claude/codex) — custom /init with roadmap, issues, logs, rules",
-    "forks_count": 0,
-    "language": "JavaScript",
-    "pushed_at": "2026-10-07T06:59:14Z",
-    "stargazers_count": 0
-  },
-  "documentation-pro": {
-    "description": null,
-    "forks_count": 0,
-    "language": "Shell",
-    "pushed_at": "2026-09-01T12:00:38Z",
-    "stargazers_count": 3
-  },
-  "gridmint": {
-    "description": null,
-    "forks_count": 0,
-    "language": "TypeScript",
-    "pushed_at": "2026-03-22T07:21:45Z",
-    "stargazers_count": 1
-  },
-  "dsgnr-cli": {
-    "description": null,
-    "forks_count": 0,
-    "language": "JavaScript",
-    "pushed_at": "2026-04-29T22:03:59Z",
-    "stargazers_count": 1
-  },
-  "hydrent": {
-    "description": null,
-    "forks_count": 0,
-    "language": "TypeScript",
-    "pushed_at": "2026-05-22T11:44:53Z",
-    "stargazers_count": 1
-  },
-  "nova-mcp": {
-    "description": "Browser Harness MCP — control your real browser + Gmail flow over MCP stdio.",
-    "forks_count": 0,
-    "language": "Python",
-    "pushed_at": "2026-09-12T00:31:25Z",
-    "stargazers_count": 0
-  }
+ "opentab": {
+  "description": "FCUK PAYWALLS \u2014 an open index of no-signup, in-browser, open-source tools. No accounts. No emails. No walls.",
+  "forks_count": 0,
+  "language": "TypeScript",
+  "pushed_at": "2026-11-10T07:38:13Z",
+  "stargazers_count": 1
+ },
+ "agent-init": {
+  "description": "One-click agentic template for CLI agents (opencode/claude/codex) \u2014 custom /init with roadmap, issues, logs, rules",
+  "forks_count": 0,
+  "language": "JavaScript",
+  "pushed_at": "2026-10-07T06:59:14Z",
+  "stargazers_count": 0
+ },
+ "documentation-pro": {
+  "description": null,
+  "forks_count": 0,
+  "language": "Shell",
+  "pushed_at": "2026-09-01T12:00:38Z",
+  "stargazers_count": 3
+ },
+ "gridmint": {
+  "description": null,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "pushed_at": "2026-03-22T07:21:45Z",
+  "stargazers_count": 1
+ },
+ "dsgnr-cli": {
+  "description": null,
+  "forks_count": 0,
+  "language": "JavaScript",
+  "pushed_at": "2026-04-29T22:03:59Z",
+  "stargazers_count": 1
+ },
+ "hydrent": {
+  "description": null,
+  "forks_count": 0,
+  "language": "TypeScript",
+  "pushed_at": "2026-05-22T11:44:53Z",
+  "stargazers_count": 1
+ },
+ "nova-mcp": {
+  "description": "Browser Harness MCP \u2014 control your real browser + Gmail flow over MCP stdio.",
+  "forks_count": 0,
+  "language": "Python",
+  "pushed_at": "2026-09-12T00:31:25Z",
+  "stargazers_count": 0
+ }
 }
