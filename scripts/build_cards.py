@@ -625,7 +625,7 @@ def main():
     profile = load_json(DATA / "profile.json", required=False)
     featured_file = ROOT / "data" / "featured.txt"  # config, not refreshed data
     featured = [ln.strip() for ln in featured_file.read_text().splitlines() if ln.strip()]
-    big_repos = {p.get("repo") for p in PROJECTS}
+    big_repos = {p.get("repo") or p["key"] for p in PROJECTS}
     small = [r for r in featured if r not in big_repos]
     OUT.mkdir(parents=True, exist_ok=True)
     written = {}
